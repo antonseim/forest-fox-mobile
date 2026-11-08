@@ -1,0 +1,32 @@
+FOREST FOX — PHONE EDITION
+
+This is the real Pygame game packaged for a modern mobile browser, not an App Store app.
+
+OPEN ON AN IPHONE (after the web folder is published to HTTPS)
+1. Open the supplied link in Safari. Keep Internet connected; first load downloads Python/Pygame.
+2. Turn the phone sideways. If needed, turn off Portrait Orientation Lock in Control Center.
+3. Tap PLAY! in the game. The Music button switches music on/off.
+4. To put it on the phone: tap Safari's Share button, choose Add to Home Screen, then Add.
+5. Open the fox icon to play. This edition still needs an Internet connection; offline play is not promised.
+
+PLAY
+• Hold the left arrows to move. Use a second finger to tap an action while moving.
+• Walk over berries, sticks, and stones to collect them. Follow the task near the top.
+• AXE throws an axe you have crafted; BOMB uses a crafted berry bomb.
+• TALK chats with nearby friends. Walk into a door to enter; LEAVE exits a building/cave/shop.
+• CRAFT opens crafting (game pauses). Tap 1 to make an axe, 2 for a berry bomb, CLOSE to return.
+• At the shop, use UP/DOWN to choose and BUY to purchase. In the cafe, use 1/2 and BUY.
+• DAGGER swings the wizard's dagger once you obtain it.
+• Pause/RESUME pauses or continues; NEXT continues after a level; RETRY retries after a loss.
+
+SAVES
+Collected inventory saves in this browser's local storage every 3 seconds. It is separate from the Mac's inventory. Level/session position is not saved, matching the original game. Clearing website data/private browsing can lose phone inventory. Home Screen and Safari storage may differ on iOS.
+
+VERSION / SAFETY
+Based on box source jungle_foxes_fingers.py (MD5 5ee03cd07417b38d602c17b32c4ca8d1). Anton's Mac was offline. This includes cute fox eyes and three-fingered trolls, but not the later moving-village update. The Mac and its running game were never modified or restarted.
+
+BUILD
+The web/ folder is a static site. Serve over HTTPS with MIME application/wasm for .wasm, application/javascript for .js, application/manifest+json for .webmanifest. Pygbag 0.9.3 downloads its runtime from pygame-web.github.io, so Internet access is required. app.apk is a Pygbag data archive, NOT an Android installer.
+
+TEST STATUS
+Python compile: passed. Native headless tests: touch start, touch movement, multi-touch, craft open/close, pause/resume, OGG audio loading passed. Browser and physical iPhone validation are still required. Screenshot phone_preview.png is from a native headless rendering of the phone edition, NOT a browser screenshot.
