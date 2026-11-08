@@ -11,6 +11,9 @@ OPEN ON AN IPHONE (after the web folder is published to HTTPS)
 
 PLAY
 • Hold the left arrows to move. Use a second finger to tap an action while moving.
+• SPRINT (the big button in the middle): hold it with a second finger while you run to go about 60% faster.
+  The bar shows your sprint power: a full sprint lasts 10 seconds, then the fox rests for 10 seconds (REST shows the seconds).
+  Let go early and the bar fills back up. On a keyboard: SHIFT = sprint (two players: player 2 uses U).
 • Walk over berries, sticks, and stones to collect them. Follow the task near the top.
 • AXE throws an axe you have crafted; BOMB uses a crafted berry bomb.
 • TALK chats with nearby friends. Walk into a door to enter; LEAVE exits a building/cave/shop.
@@ -22,6 +25,11 @@ PLAY
 SAVES
 Collected inventory saves in this browser's local storage every 3 seconds. It is separate from the Mac's inventory. Level/session position is not saved, matching the original game. Clearing website data/private browsing can lose phone inventory. Home Screen and Safari storage may differ on iOS.
 
+SPEED (Nov 8)
+The fox walks at 8.4 (was 6.2), so the trip to Fox Village takes about 37 seconds at a steady walk (27 with sprint) out of 3:00.
+Golden berry = walk + 4, meat = 12.4 (the top boost). Trolls now move 7.2 - just a bit slower than the fox - and NO troll
+(Speedy Trolls, lightning, green/peppermint trolls, lunges, the boss) is ever faster than 95% of the fox's walk.
+
 VERSION / SAFETY
 Based on box source jungle_foxes_fingers.py (MD5 5ee03cd07417b38d602c17b32c4ca8d1). Anton's Mac was offline. This includes cute fox eyes and three-fingered trolls, but not the later moving-village update. The Mac and its running game were never modified or restarted.
 
@@ -29,4 +37,4 @@ BUILD
 The web/ folder is a static site. Serve over HTTPS with MIME application/wasm for .wasm, application/javascript for .js, application/manifest+json for .webmanifest. Pygbag 0.9.3 downloads its runtime from pygame-web.github.io, so Internet access is required. app.apk is a Pygbag data archive, NOT an Android installer.
 
 TEST STATUS
-Python compile: passed. Native headless tests: touch start, touch movement, multi-touch, craft open/close, pause/resume, OGG audio loading passed. Browser and physical iPhone validation are still required. Screenshot phone_preview.png is from a native headless rendering of the phone edition, NOT a browser screenshot.
+Python compile: passed. Native headless tests: touch start, touch movement, multi-touch, craft open/close, pause/resume, OGG audio loading, SPRINT (10 s use, 10 s rest, multi-touch with the arrows), top-speed collision, troll speed caps passed. Browser and physical iPhone validation are still required. Screenshot phone_preview.png is from a native headless rendering of the phone edition, NOT a browser screenshot.
